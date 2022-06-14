@@ -1,0 +1,18 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "typescript"
+    },
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["src/lib/*"],
+      "@db": ["src/db/index.ts"],
+      "@env": [".env.json"]
+    },
+    "target": "es2022",
+    "externalHelpers": true
+  },
+  "module": {
+    "type": "commonjs"
+  }
+}

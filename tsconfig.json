@@ -1,0 +1,17 @@
+{
+  "extends": "@aroleaf/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": false,
+    "baseUrl": ".",
+    "paths": {
+      "@lib/*": ["src/lib/*"],
+      "@db": ["src/db/index"],
+      "@env": [".env.json"]
+    },
+  },
+  "include": ["src/**/*"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "beatrice",
+  "private": true,
+  "version": "2.0.0-dev",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "npx swc src -d dist",
+    "dev": "npx ts-node .",
+    "prod": "node dist"
+  },
+  "devDependencies": {
+    "@aroleaf/tsconfig": "^1.0.0",
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.187",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^4.0.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "@swc/helpers": "^0.3.13",
+    "detritus-client": "^0.17.0-beta.12",
+    "file-ez": "^1.0.0",
+    "mongoose": "^6.3.4",
+    "xregexp": "^5.1.0"
+  }
+}
